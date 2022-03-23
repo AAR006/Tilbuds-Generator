@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <textarea name="Print" id="PrintOut" cols="100" rows="25" disabled></textarea>
+            <button style="float:right" onclick="Copy()"> Copy </button>
+        </div>
+
+        <label for="KName">Navn</label><br>
+        <input type="text" id="ClientName" name="KName" placeholder="Kunde Navn"><br>
+        <input type="text" id="SupportName" name="SName" placeholder="Support Navn"><br>
+        <br>
+        <label for="Produkt">Produkt</label><br>
+        <input type="radio" name="Produkt" id="Internett1" class="Item" value="Internett 50mbit">
+        <label for="Internett1">Internett 50mbit 399,- kr</label><br>
+
+        <input type="radio" name="Produkt" id="Internett2" class="Item" value="Internett 100mbit">
+        <label for="Internett2">Internett 100mbit 599,- kr</label><br>
+
+        <input type="radio" name="Produkt" id="Internett3" class="Item" value="Internett 300mbit">
+        <label for="Internett3">Internett 300mbit 799,- kr</label><br>
+
+        <input type="radio" name="Produkt" id="Internett4" class="Item" value="Internett 500mbit">
+        <label for="Internett4">Internett 500mbit 999,- kr</label><br>
+        <input type="number" name="Rabatt" id="Discount1" max="100" min="0" value="0">
+        <label for="Discount">% Rabatt</label><br>
+        <br>
+        <label for="Produkt">Tillegg</label><br>
+        <input type="checkbox" name="Produkt" id="Product1" class="Item2" value="Ekstra TV-dekoder">
+        <label for="Product1">Ekstra TV-dekoder 399,- kr</label><br>
+        <input type="checkbox" name="Produkt" id="Product2" class="Item2" value="Wifi-extender">
+        <label for="Product2">Wifi-extender 499,- kr</label><br>
+        <input type="number" name="Rabatt" id="Discount2" max="100" min="0" value="0">
+        <label for="Discount">% Rabatt</label><br>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
